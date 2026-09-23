@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: #07111f;
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+* { box-sizing: border-box; }
+::selection { background: rgba(67,217,173,.25); color: white; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button { font-family: inherit; }
+
+.section-shell {
+  width: min(100% - 2.5rem, 80rem);
+  margin-inline: auto;
+  padding-block: 6.5rem;
+  scroll-margin-top: 5rem;
+}
+.section-label {
+  margin-bottom: 1.25rem;
+  color: #43d9ad;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.section-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -.04em;
+}
+.text-gradient {
+  background: linear-gradient(100deg, #43d9ad 5%, #8be8d0 45%, #a5b4fc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.card-hover { transition: transform .3s ease, border-color .3s ease, background .3s ease; }
+.card-hover:hover { transform: translateY(-4px); border-color: rgba(67,217,173,.2); background: rgba(255,255,255,.04); }
+.input-field {
+  display: block;
+  width: 100%;
+  margin-top: .55rem;
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: .85rem;
+  background: rgba(255,255,255,.035);
+  padding: .85rem 1rem;
+  color: white;
+  outline: none;
+  transition: border-color .2s, background .2s;
+}
+.input-field:focus { border-color: rgba(67,217,173,.5); background: rgba(255,255,255,.05); }
+@media (min-width: 640px) { .section-shell { width: min(100% - 4rem, 80rem); } }
+@media (min-width: 1024px) { .section-shell { width: min(100% - 5rem, 80rem); } }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
