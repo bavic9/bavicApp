@@ -63,16 +63,6 @@ export const projects = [
     source_code_link: "https://github.com/bavic9/zarrin-app",
     live_link: "https://zarrin-app.vercel.app",
   },
-    {
-    name: "Task Manager",
-    category: "React",
-    description: "A focused productivity app for organizing, tracking and managing tasks through a clean responsive interface.",
-    tags: ["React", "TypeScript", "Tailwind"],
-    image: task,
-    source_code_link: "https://github.com/bavic9/tasks",
-    live_link: "https://tasks-theta-nine.vercel.app/",
-  },
- 
   {
     name: "Stake Net",
     category: "React",
@@ -81,6 +71,15 @@ export const projects = [
     image: stake,
     source_code_link: "https://github.com/bavic9/stakenet",
     live_link: "https://cryptoapp-olive.vercel.app/",
+  },
+    {
+    name: "Task Manager",
+    category: "React",
+    description: "A focused productivity app for organizing, tracking and managing tasks through a clean responsive interface.",
+    tags: ["React", "TypeScript", "Tailwind"],
+    image: task,
+    source_code_link: "https://github.com/bavic9/tasks",
+    live_link: "https://tasks-theta-nine.vercel.app/",
   },
    {
     name: "Homzy",
